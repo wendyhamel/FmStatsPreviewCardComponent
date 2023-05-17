@@ -6,16 +6,19 @@ tailwind.config = {
 		},
 		extend: {
 			colors: {
-				'Very dark blue': 'hsl(233, 47%, 7%)', // (main background)
-				'Dark desaturated blue': 'hsl(244, 38%, 16%)', // (card background)
-				'Soft violet ': 'hsl(277, 64%, 61%)', // (accent)
-				'White': 'hsl(0, 0%, 100%)', // (main heading, stats)
-				'Slightly transparent white': 'hsla(0, 0%, 100%, 0.75)', // (main paragraph)
-				'Slightly transparent white ': 'hsla(0, 0%, 100%, 0.6)', // (stat headings)
+				'blue-dark': 'hsl(233, 47%, 7%)', // (main background)
+				'blue-des': 'hsl(244, 38%, 16%)', // (card background)
+				'violet': 'hsl(277, 64%, 61%)', // (accent)
+				'white': 'hsl(0, 0%, 100%)', // (main heading, stats)
+				'white-op-75': 'hsla(0, 0%, 100%, 0.75)', // (main paragraph)
+				'white-op-60': 'hsla(0, 0%, 100%, 0.6)', // (stat headings)
+			},
+			'spacing': {
+				'22': '5.5rem'
 			},
 			'fontSize': {
 				'small': '0.9375rem',
-				'large': '1.375rem'
+				'large': '1.75rem'
 			}
 		}
 	}

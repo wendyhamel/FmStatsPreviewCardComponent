@@ -21,40 +21,41 @@
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </head>
-<body>
+<body class=" antialiased bg-blue-dark min-h-screen grid place-content-center">
 
-  <main>
-    <section>
+  <main class="bg-blue-des mx-6 my-22 rounded-lg overflow-hidden flex flex-col md:flex-row-reverse md:max-w-[1111px]">
+    <section class="relative">
       <picture>
         <source srcset="images/image-header-desktop.jpg" media="(min-width: 640px)">
-        <img class="w-full h-full object-cover" src="images/image-header-mobile.jpg" alt="image of office with people working">
+        <img class="relative w-full h-full object-cover md:shrink-0" src="images/image-header-mobile.jpg" alt="image of office with people working">
       </picture>
+      <div class="absolute inset-0 bg-violet mix-blend-multiply"></div>
     </section>
-     <section>
-       <h1>Get <span>insights</span> that help your business grow.</h1>
-       <p class="text-small">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+     <section class="pt-10 px-6 pb-9 flex flex-col h-full gap-5 md:pt-16 md:px-16 md:max-w-xl md:gap-6 md:pb-16">
+       <h1 class="text-center text-white font-bold text-large leading-8 md:text-start md:text-4xl md:px-2 md:pt-2 md:leading-[2.8rem]">Get <span class="text-violet">insights</span> that help your business grow.</h1>
+       <p class="px-2 text-center text-white-op-75 text-small leading-6 md:text-start md:px-2 md:pr-20 md:leading-[1.55rem]">Discover the benefits of data analytics and make better decisions regarding revenue, customer
          experience, and overall efficiency.</p>
-       <ul>
-         <li>
-           <p>10k+</p>
-           <p class="text-small">314</p>
+       <ul class="text-center pt-5 flex flex-col gap-7 md:flex-row md:text-start md:pl-2 md:pr-20 md:mt-auto md:w-full md:justify-between">
+         <li class="grid place-content-center gap-1">
+           <p class="text-white font-bold text-2xl">10k+</p>
+           <p class="text-white-op-60 font-serif uppercase text-xs tracking-wider">companies</p>
          </li>
-         <li>
-           <p>companies</p>
-           <p class="text-small">templates</p>
+         <li class="grid place-content-center gap-1">
+           <p class="text-white font-bold text-2xl">314</p>
+           <p class="text-white-op-60 font-serif uppercase text-xs tracking-wider">templates</p>
          </li>
-         <li>
-           <p>12m+</p>
-           <p class="text-small">queries</p>
+         <li class="grid place-content-center gap-1">
+           <p class="text-white font-bold text-2xl">12M+</p>
+           <p class="text-white-op-60 font-serif uppercase text-xs tracking-wider">queries</p>
          </li>
        </ul>
      </section>
 
 </main>
 
-  <footer class="fixed bottom-0 inset-x-0 text-center text-xs bg-white/80 py-1 opacity-0 translate-y-2 hover:opacity-100 hover:translate-y-0 transform transition ease-in-out duration-150">
-    Challenge by <a class="hover:underline" href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62" target="_blank">Frontend Mentor</a>.
-    Coded by <a class="hover:underline" href="https://www.frontendmentor.io/profile/wendyhamel" target="_blank">Wendy Hamel</a>.
+  <footer class="fixed bottom-0 inset-x-0 text-center text-white text-xs bg-blue-des py-2 opacity-0 translate-y-2 hover:opacity-100 hover:translate-y-0 transform transition ease-in-out duration-150">
+    Challenge by <a class="underline hover:text-violet" href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="underline hover:text-violet" href="https://www.frontendmentor.io/profile/wendyhamel" target="_blank">Wendy Hamel</a>.
   </footer>
 </body>
 </html>
